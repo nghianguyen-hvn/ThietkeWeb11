@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Buổi 2]Bài tập 1 - Sử dụng thẻ form kết hợp input, select</title>
+</head>
+<body>
+    <h1>Biểu mẫu đăng ký</h1>
+    <form action="">
+        <p>
+            <label for="Username">Username:</label> 
+            <input type="text" id="Username" name="Username" required>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" required>
+            <label for="Re-confirm password">Re-confirm password:</label>
+            <input type="password" name="Re-confirm password" id="Re-confirm password" required>
+        </p>
+        <p>
+        <label for="Gender">Gender:</label>
+           <select name="Gender" id="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        <label for="National">National:
+            <select name="National" id="National">
+                <option value="VietNam">VietNam</option>
+                <option value="Korea">Korea</option>
+                <option value="USA">USA</option>
+            </select>
+        </label>
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
