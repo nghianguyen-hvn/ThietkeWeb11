@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập 2 - Thực hành margin</title>
+    <style>
+        /* Hãy mở tab TRÌNH DUYỆT để xem thay đổi trực quan */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .heading {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        .post-item {
+            padding: 12px 14px;
+            border: 2px solid #ccc;
+
+            /* Bo tròn góc 16px */
+            border-radius: 16px;
+            margin-top: 10px;
+        }
+
+        .post-item .title a {
+            color: #333;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        .post-item .desc {
+            font-size: 1.6rem;
+            color: #444;
+            margin-top: 5px;
+        }
+
+        .post-item .min-read {
+            font-size: 1.4rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Vấn đề:
+            1. Tiêu đề lớn của trang và post-item quá gần nhau
+            2. Giữa 2 post-items bị dính vào nhau
+            3. Tiêu đề & mô tả bài đăng hơi gần nhau
+            4. Số phút đọc & mô tả bài đăng hơi gần nhau.
+            Hãy thêm margin để xử lý 4 vấn đề trên.
+         */
+        /* Css margin vào đây */
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="heading">Bài viết nổi bật</h1>
+
+        <!-- Thẻ chứa tất cả các bài đăng -->
+        <div class="posts-list">
+            <!-- Bài đăng 1 -->
+            <div class="post-item">
+                <h2 class="title">
+                    <a href="https://fullstack.edu.vn/blog/tim-hieu-ve-html-va-css.html">Tìm hiểu về HTML và CSS</a>
+                </h2>
+                <p class="desc">Bài viết sẽ giới thiệu về HTML, CSS là gì, các thẻ cơ bản HTML, CSS. Mục đích của bài
+                    viết
+                    để
+                    tổng hợp kiến thức cơ bản về HTML, CSS. Hy vọng được thảo luận....</p>
+                <p class="min-read">17 phút đọc</p>
+            </div>
+
+            <!-- Bài đăng 2 -->
+            <div class="post-item">
+                <h2 class="title">
+                    <a href="https://fullstack.edu.vn/blog/update-cach-su-dung-package-sass-1.html">Update cách sử dụng
+                        Package SASS</a>
+                </h2>
+                <p class="desc">Tên cũ là package này Node-sass. Nhưng gần đây họ đã bỏ hỗ trợ Node-sass nên khi cài bạn
+                    sẽ
+                    nhận
+                    được warning của...</p>
+                <p class="min-read">2 phút đọc</p>
+            </div>
+
+            <!-- Bài đăng 3 -->
+            <div class="post-item">
+                <h2 class="title">
+                    <a href="https://fullstack.edu.vn/blog/thoi-gian-va-dong-luc.html">Thời gian và Động lực?</a>
+                </h2>
+                <p class="desc">Có lẽ cũng rất lâu rồi mà tôi chưa đụng đến thứ được gọi là "timetable". Hay dân dã hơn
+                    thì
+                    người ta hay gọi là "Lịch thường nhật",...</p>
+                <p class="min-read">6 phút đọc</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

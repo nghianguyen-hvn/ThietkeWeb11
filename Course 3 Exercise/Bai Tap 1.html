@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Buổi 3] Bài tập 1 - Tạo form đăng ký kết hợp HTML, CSS</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            color: black;
+            background-color: rgb(231, 231, 109);
+            padding: 20px;
+            border: 10px solid grey;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            width: 440px;
+            height: 20px;
+            color: blue;
+            text-align: left;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            DANG KY HOC VIEN
+        </div>
+        <div>
+            <label for="Ho Va Ten"> Ho Va Ten </label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="Ngay Sinh"> Ngay Sinh </label>
+            <input type="date" name="Ngay Sinh" id="Ngay Sinh">
+        </div>
+        <div>
+            <label for="Gioi Tinh"> Gioi Tinh </label>
+            <input type="radio" name="Gioi Tinh" id="Nam"> Nam
+            <input type="radio" name="Gioi Tinh" id="Nu"> Nu
+        </div>
+        <div>
+            <label for="Dia Chi"> Dia Chi </label>
+            <input type="text" size="40">
+        </div>
+        <div>
+            <label for="Lop"> Lop </label>
+            <select name="Lop" id="Lop"> Lop
+                <option value="Chon Lop"> --Chon Lop-- </option>
+                <option value="Lop A"> Lop A </option>
+                <option value="Lop B"> Lop B </option>
+                <option value="Lop C"> Lop C </option>
+            </select>
+        </div>
+        <div>
+            <label for="Email"> Email </label>
+            <input type="email" name="Email" id="">
+        </div>
+        <div>
+            <label for="Dien Thoai"> Dien Thoai </label>
+            <input type="phone" name="Dien Thoai" id="">
+        </div>
+        <div>
+            <button>Dang Ky</button>
+            <button>Nhap Lai</button>
+        </div>
+    </div>
+</body>
+
+</html>
