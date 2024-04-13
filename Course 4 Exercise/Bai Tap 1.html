@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Buổi 4] Bài tập 1 - Tạo giao diện đơn giản với Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .main {
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            width: 25vh;
+            min-width: 25%;
+            flex-grow: 1;
+        }
+
+        .content {
+            width: 75vh;
+            min-width: 75%;
+            flex-grow: 1;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 20px;
+            color: red;
+            background-color: cornsilk;
+            border-radius: 10px;
+            border: 5px solid goldenrod;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: grey;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">header</div>
+        <div class="main">
+            <div class="item sidebar">sidebar</div>
+            <div class="item content">content</div>
+        </div>
+        <div class="item">footer</div>
+    </div>
+</body>
+
+</html>

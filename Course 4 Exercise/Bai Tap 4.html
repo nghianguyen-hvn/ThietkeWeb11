@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Buổi 4] Bài tập 4 - Xây dựng menu dạng nâng cao (Có menu con)</title>
+    <style>
+        .menu {
+            display: flex;
+            flex-grow: 1;
+            background-color: darkslategray;
+            height: 5vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .menu a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+
+        }
+
+        .about {
+            padding: 15px 20px;
+            color: white;
+            background-color: darkslategray;
+            border: none;
+        }
+
+        .menu a:hover {
+            background-color: dimgray;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdownoptions {
+            display: none;
+            position: absolute;
+            overflow: auto;
+            padding: 30px 30px;
+            background-color: darkslategray;
+            border-radius: 5px;
+        }
+
+        .dropdown:hover .dropdownoptions {
+            display: block;
+            background-color: darkslategray;
+        }
+
+        .about:hover {
+            background-color: dimgray;
+        }
+
+        .dropdownoptions a {
+            display: block;
+            text-decoration: none;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item menu">
+            <a href="home">Home</a>
+            <div class="dropdown">
+                <button class="about">About</button>
+                <div class="dropdownoptions">
+                    <a href="history">History</a>
+                    <a href="mission">Mission</a>
+                    <a href="vision">Vision</a>
+                </div>
+            </div>
+            <a href="services">Service</a>
+            <div class="dropdown">
+                <button class="about">Contact</button>
+                <div class="dropdownoptions">
+                    <a href="history">Phone</a>
+                    <a href="mission">Email</a>
+                    <a href="vision">Address</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

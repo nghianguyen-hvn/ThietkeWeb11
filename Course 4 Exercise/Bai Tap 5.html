@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Buổi 4] Bài tập 5 - Xây dựng layout dạng phức tạp</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+
+        }
+
+        .main {
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            width: 25vh;
+            min-width: 25%;
+            flex-grow: 1;
+            background-color: lightsalmon;
+        }
+
+        .content {
+            width: 75vh;
+            min-width: 75%;
+            flex-grow: 1;
+            box-sizing: border-box;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 20px;
+            color: white;
+            border-radius: 10px;
+            border: 5px solid white;
+            box-sizing: border-box;
+            min-height: 10vh;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .content1 {
+            display: flex;
+            flex-grow: 1;
+            height: 50%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+        }
+
+        .content23 {
+            display: flex;
+            height: 50%;
+            flex-grow: 1;
+        }
+
+        .content2 {
+            display: flex;
+            width: 50%;
+            background-color: purple;
+        }
+
+        .content3 {
+            display: flex;
+            width: 50%;
+            background-color: purple;
+        }
+
+        .hf {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item hf">HEADER</div>
+        <div class="main">
+            <div class="item sidebar">SIDEBAR</div>
+            <div class="content">
+                <div class="item content1">CONTENT1</div>
+                <div class="content23">
+                    <div class="item content2">CONTENT2</div>
+                    <div class="item content3">CONTENT3</div>
+                </div>
+            </div>
+        </div>
+        <div class="item hf">FOOTER</div>
+    </div>
+</body>
+
+</html>
